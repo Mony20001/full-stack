@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  background: #f8fafc;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark body,
+html.dark #root {
+  background: #1c1917;
+}
+
+html.dark header {
+  background-color: #1c1917 !important;
+}
+
+html.dark .bg-stone-50,
+html.dark .bg-stone-100,
+html.dark .bg-gray-50,
+html.dark .bg-slate-50,
+html.dark .bg-\[\#FAF7F2\] {
+  background-color: #1c1917 !important;
+}
+
+html.dark .bg-white,
+html.dark .bg-white\/80,
+html.dark .bg-\[\#f7f5f2\] {
+  background-color: #292524 !important;
+}
+
+html.dark .text-stone-800,
+html.dark .text-stone-900,
+html.dark .text-\[\#2C2A29\],
+html.dark .text-gray-900 {
+  color: #f5f5f4 !important;
+}
+
+html.dark .text-stone-700,
+html.dark .text-stone-600,
+html.dark .text-stone-500,
+html.dark .text-gray-500 {
+  color: #d6d3d1 !important;
+}
+
+html.dark .text-stone-400,
+html.dark .text-gray-400 {
+  color: #a8a29e !important;
+}
+
+html.dark .border-stone-100,
+html.dark .border-stone-200,
+html.dark .border-stone-300,
+html.dark .border-\[\#f0ede9\] {
+  border-color: #57534e !important;
+}
+
+html.dark .hover\:bg-stone-50:hover,
+html.dark .hover\:bg-stone-200:hover,
+html.dark .hover\:bg-gray-200:hover {
+  background-color: #44403c !important;
+}
+@keyframes slide {
+  0%, 20%   { transform: translateX(0); }
+  25%, 45%  { transform: translateX(-25%); }
+  50%, 70%  { transform: translateX(-50%); }
+  75%, 95%  { transform: translateX(-75%); }
+  100%      { transform: translateX(0); }
+}
+
+.animate-slide {
+  animation: slide 10s infinite ease-in-out;
+}

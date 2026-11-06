@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+
+# Local secrets and environment configuration
+.env
+.env.*
+!.env.example
+
+# Local archive of the original nested repository metadata
+.git-history-backups/
