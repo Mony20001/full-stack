@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000
 // SESSION_SECRE is retained only to avoid breaking existing local .env files.
 const sessionSecret = process.env.SESSION_SECRET || process.env.SESSION_SECRE;
 if (!sessionSecret) {
-    throw new Error('SESSION_SECRET is required. Add it to Backend_API/.env before starting the server.');
+    throw new Error('SESSION_SECRET environment variable is required. Set it in your hosting provider or Backend_API/.env.');
 }
 const server = express();
 connectDB();
