@@ -12,7 +12,7 @@
     "passport-google-oauth20": "^2.0.0"
   },
   "scripts": {
-    "start": "node --env-file=.env index.js",
+    "start": "node index.js",
     "dev": "nodemon --env-file=.env index.js"
   },
   "name": "backend_api",
