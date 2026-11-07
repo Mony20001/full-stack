@@ -1,0 +1,9 @@
+{
+  "name": "skincare-shop-deployment",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm --prefix Backend_API ci",
+    "start": "npm --prefix Backend_API run start",
+    "dev": "npm --prefix Backend_API run start"
+  }
+}
